@@ -1,0 +1,12 @@
+table TestTable {
+    test_id: string;
+    test_long: long;
+}
+
+table TestRoot {
+    tests: [TestTable];
+}
+
+file_identifier "TEST";
+file_extension "test";
+root_type TestRoot;
